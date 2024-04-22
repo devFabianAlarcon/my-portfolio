@@ -1,23 +1,22 @@
 export const scaleFactor = 4;
 
 export const dialogueData = {
-    pc: `This is my PC. I work mostly in JavaScript/TypeScript these days.
-      I've made a couple of games in that language. I also like Golang and Python. Anyway regardless of the language, I just like programming.
-      Here is my <a href="https://github.com/jslegenddev" target="_blank">Github</a>!`,
-    "cs-degree": `This is my CS degree. I hung it on the wall because I'm proud of it. It was a very theoretical degree but I think it gave me a good foundation.`,
-    "sofa-table": `That's my sofa. I like to relax here and watch YouTube. 
-    I also make game programming tutorials on YouTube. Go sub to <a href="https://youtube.com/@jslegenddev" target="_blank">my channel</a>! (If you like the content)
-    You'll learn how I built this portfolio you're currently playing through!`,
-    tv: `That's my TV. I've been watching tech youtubers a lot recently like :
-     <a href="https://www.youtube.com/@ThePrimeTimeagen" target="_blank">Theprimeagen</a>, <a href="https://www.youtube.com/@t3dotgg" target="_blank">Theo - t3.gg</a>,
-    <a href="https://www.youtube.com/@PirateSoftware" target="_blank">PirateSoftware</a> (sometimes) and <a href="https://www.youtube.com/@MelkeyDev" target="_blank">Melkey</a>!`,
-    bed: `This where I sleep. Great ideas comes when I'm lying on my bed. When an idea strikes, I often have to write it down or else I won't be able to sleep because my mental energy is consumed by it.`,
-    resume: `This is my desk and on it is my resume. <a href="https://github.com/JSLegendDev/Resume/blob/main/JSLegend%20Resume-1.pdf" target="_blank">Check it out?</a>
-    Contact me at jslegend@protonmail.com if you have any interesting job opportunities!`,
-    projects: `Info about this portfolio : It's made with the Kaboom.js library which is a library for making games in JavaScript.
-    Text is rendered with HTML/CSS. So the textbox you're currently reading is not rendered within canvas. Learn more about how to use
-    Kaboom.js by watching some of my tutorials <a href="https://youtube.com/@jslegenddev" target="_blank">here</a>.`,
-    library: `There are a lot of programming books on my shelves. There is even one in French (I also speak French btw).
-    I probably only read one of them. Who else compulsively buys technical books without ever finishing them?`,
-    exit: `If you want to exit JSLegendDev's portfolio, just close the tab.`,
-  };
+  "pc": `Ahí está mi computadora, mi fiel compañera de trabajo. Juntos hemos superado tantos desafíos. Es donde doy vida a mis ideas, donde programo y diseño, y donde encuentro soluciones a problemas complicados.`,
+  "sofa": `Ese es mi sofá. Después de horas de concentración, es mi refugio. Aquí me siento, me relajo y dejo que mi mente divague un poco. Es un oasis de comodidad en medio de mi jornada.`,
+  "living-tv": `Esa es mi televisión en la sala. Después de largas sesiones de trabajo, me doy un tiempo para relajarme y sintonizar algunos programas interesantes. A veces, incluso encuentro ideas para mis proyectos mientras veo algo de televisión.`,
+  "bed": `Aquí es donde duermo. Las grandes ideas vienen cuando estoy acostado en mi cama. Cuando una idea surge, a menudo tengo que escribirla o de lo contrario no podré dormir porque mi energía mental está consumida por ella.`,
+  "resume": `Aquí esta un pequeño resumen de algunos de los logros los cuales me siento orgulloso de consiguir en este maravilloso programa: <br>
+  <ul>  
+  <li>Automatización en laC AWS mediante EventBridge, para optimización de costos en programación de horarios para encender y apagar clusters en horas no laborales.</li>
+  <li>Implementación y configuración de laC de componentes para el proyecto Simulator Mngr.</li>
+  <li>Actualización de módulos de laC.</li>
+  <li>Implementación de configuración de networking para la comunicación entre servicios ECS de AWS.</li>
+  <li>Generación de componentes en distintos proyectos como Harmony y Quality.</li>
+  <li>Actualización módulo Lambda con implementación de lambda@edge.</li> </ul>
+    Además, puedes encontrarme en GitHub: DevFabianAlarcon (perfil personal) y fgalarco_davicode (perfil laboral), así como en LinkedIn: Fabian G. Alarcon.`,
+  "library": `Hay muchos libros de programación en mis estantes. Incluso hay uno en francés (también hablo francés por cierto). Probablemente solo haya leído uno de ellos. ¿Quién más compra compulsivamente libros técnicos sin terminarlos nunca?`,
+  "exit": `Ahí está la salida. Es como el portal que me lleva fuera de mi mundo de trabajo hacia nuevas aventuras. A veces, solo necesito tomar un respiro y salir a explorar. Para salir del portafolio, simplemente debes cerrar la pestaña`,
+  "cs-degree": `Ahí está mi título en Ingeniería de Software, colgado en la pared con orgullo. Es un recordatorio constante de mi dedicación y logros. Cada experiencia y habilidad en mi currículum me ha llevado hasta aquí, y estoy emocionado por lo que el futuro me depara.`,
+  "fridge": `Este es mi refrigerador. Aquí es donde guardo mis refrigerios mientras trabajo en proyectos emocionantes. También es donde encuentro inspiración a veces, especialmente cuando necesito un descanso.`,
+  "bed-tv": `Esa es la televisión en mi habitación. Antes de dormir, a veces me relajo viendo algo de televisión. Es una forma de desconectar y relajarme después de un día productivo.`,
+};
