@@ -1,4 +1,4 @@
-import { scaleFactor } from "./constants";
+import { dialogueData, scaleFactor } from "./constants";
 import { k } from "./kaboomCtx"
 import { displayDialogue, setCamScale } from "./utils";
 
@@ -16,12 +16,12 @@ k.loadSprite("spritesheet", "./spritesheet.png", {
     }
 });
 
-k.loadSprite("map", "./map.png");
+k.loadSprite("map", "./map2.png");
 
 k.setBackground(k.Color.fromHex("#311047"));
 
 k.scene("main", async () => {
-    const mapData = await (await fetch("./map.json")).json();
+    const mapData = await (await fetch("./map2.json")).json();
     const layers = mapData.layers;
 
     const map = k.add([k.sprite("map"), k.pos(0), k.scale(scaleFactor)]);
@@ -59,7 +59,7 @@ k.scene("main", async () => {
                 if(boundary.name) {
                     player.onCollide(boundary.name, () => {
                         player.isInDialogue = true
-                        displayDialogue("test", () => (player.isInDialogue = false));
+                        displayDialogue(dialogueData[boundary.name], () => (player.isInDialogue = false));
                     })
                 }
             }
@@ -88,6 +88,7 @@ k.scene("main", async () => {
     k.onUpdate(()=> {
         k.camPos(player.pos.x, player.pos.y + 100);
     });
+
     k.onMouseDown((mouseBtn) => {
         if(mouseBtn !== "left" || player.isInDialogue) return;
 
