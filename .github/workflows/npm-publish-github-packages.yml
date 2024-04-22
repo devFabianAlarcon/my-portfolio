@@ -24,4 +24,4 @@ jobs:
         run: npm run build # Asegúrate de tener un script de construcción en tu package.json
 
       - name: Deploy to server
-        run: kabook deploy 
+        run: npx kabook deploy
