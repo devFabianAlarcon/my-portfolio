@@ -1,5 +1,5 @@
 import { dialogueData, scaleFactor } from "./constants";
-import { k } from "./kaboomCtx"
+import { k } from "./kaboomCtx";
 import { displayDialogue, setCamScale } from "./utils";
 
 k.loadSprite("spritesheet", "./spritesheet.png", {
@@ -12,7 +12,6 @@ k.loadSprite("spritesheet", "./spritesheet.png", {
         "walk-slide": { from: 975, to: 978, loop: true, speed: 8},
         "idle-up": 975,
         "walk-up": { from: 1014, to: 1017, loop: true, speed: 8}
-
     }
 });
 
@@ -21,6 +20,7 @@ k.loadSprite("map", "./map.png");
 k.setBackground(k.Color.fromHex("#311047"));
 
 k.scene("main", async () => {
+    // Initialize game elements
     const mapData = await (await fetch("./map.json")).json();
     const layers = mapData.layers;
 
@@ -39,7 +39,6 @@ k.scene("main", async () => {
             speed: 250,
             direction: "down",
             isInDialogue: false,
-
         },
         "player"
     ]);
@@ -79,16 +78,18 @@ k.scene("main", async () => {
         }
     }
 
+    // Set camera scale and update functions
     setCamScale(k);
 
     k.onResize(() => {
         setCamScale(k);
-    })
+    });
 
     k.onUpdate(()=> {
         k.camPos(player.pos.x, player.pos.y + 100);
     });
 
+    // Mouse events
     k.onMouseDown((mouseBtn) => {
         if(mouseBtn !== "left" || player.isInDialogue) return;
 
@@ -100,21 +101,21 @@ k.scene("main", async () => {
         const lowerBound = 50
         const upperBound = 125;
 
-        // Player animacion arriba
+        // Player animation up
         if (mouseAngle > lowerBound && mouseAngle < upperBound && player.curAnim() !== "walk-up") {
             player.play("walk-up");
             player.direction = "up";
             return;
         }
 
-        // Player animacion abajo
+        // Player animation down
         if (mouseAngle < -lowerBound && mouseAngle > -upperBound && player.curAnim() !== "walk-down") {
             player.play("walk-down");
             player.direction = "down";
             return;
         }
 
-        // Player animacion lados
+        // Player animation sideways
         if (Math.abs(mouseAngle) > upperBound) {
             player.flipX = false;
             if (player.curAnim() !== "walk-slide") player.play("walk-slide");
@@ -128,7 +129,7 @@ k.scene("main", async () => {
             player.direction = "left";
             return;
         }
-    })
+    });
 
     k.onMouseRelease(() => {
         if (player.direction === "down") {
@@ -141,7 +142,11 @@ k.scene("main", async () => {
         }
 
         player.play("idle-slide");
-    })
+    });
+
+    // Display mensaje de bienvenida
+    displayDialogue(dialogueData.welcome, () => {
+    });
 });
 
 k.go("main");
