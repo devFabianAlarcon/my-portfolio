@@ -13,10 +13,10 @@ export const dialogueData = {
   <li>Implementación de configuración de networking para la comunicación entre servicios ECS de AWS.</li>
   <li>Generación de componentes en distintos proyectos como Harmony y Quality.</li>
   <li>Actualización módulo Lambda con implementación de lambda@edge.</li> </ul>
-    Además, puedes encontrarme en GitHub: DevFabianAlarcon (perfil personal) y fgalarco_davicode (perfil laboral), así como en LinkedIn: Fabian G. Alarcon.`,
-  "library": `Hay muchos libros de programación en mis estantes. Incluso hay uno en francés (también hablo francés por cierto). Probablemente solo haya leído uno de ellos. ¿Quién más compra compulsivamente libros técnicos sin terminarlos nunca?`,
+    Además, puedes encontrarme en LinkedIn: <a href="https://www.linkedin.com/in/fabian-g-alarcon/" target="_blank">Fabian G. Alarcon.</a>`,
+  "library": `Esa es mi biblioteca personal. Cada libro aquí es una fuente de inspiración y conocimiento. Es donde encuentro respuestas a mis preguntas y nuevas ideas para mis proyectos. Probablemente solo haya leído completamente alguno de ellos. ¿Quién más compra compulsivamente libros técnicos sin terminarlos nunca?`,
   "exit": `Ahí está la salida. Es como el portal que me lleva fuera de mi mundo de trabajo hacia nuevas aventuras. A veces, solo necesito tomar un respiro y salir a explorar. Para salir del portafolio, simplemente debes cerrar la pestaña`,
   "cs-degree": `Ahí está mi título en Ingeniería de Software, colgado en la pared con orgullo. Es un recordatorio constante de mi dedicación y logros. Cada experiencia y habilidad en mi currículum me ha llevado hasta aquí, y estoy emocionado por lo que el futuro me depara.`,
-  "fridge": `Este es mi refrigerador. Aquí es donde guardo mis refrigerios mientras trabajo en proyectos emocionantes. También es donde encuentro inspiración a veces, especialmente cuando necesito un descanso.`,
+  "fridge": `Esta es mi nevera. Aquí es donde busco mis refrigerios mientras trabajo en proyectos emocionantes. También es donde encuentro inspiración a veces, especialmente cuando necesito un descanso.`,
   "bed-tv": `Esa es la televisión en mi habitación. Antes de dormir, a veces me relajo viendo algo de televisión. Es una forma de desconectar y relajarme después de un día productivo.`,
 };
