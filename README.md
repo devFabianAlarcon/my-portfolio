@@ -29,6 +29,10 @@ To run this portfolio locally on your machine, follow these steps:
 4. Run the development server using `npm run dev` or `yarn dev`.
 5. Open your web browser and visit `http://localhost:3000` to view the portfolio.
 
+## Additional Information
+
+This portfolio is published via GitHub Actions and is available online at [https://devfabianalarcon.github.io/my-portfolio/](https://devfabianalarcon.github.io/my-portfolio/). GitHub Pages is used to host the website, and GitHub Actions automates the deployment process whenever updates are made to the main repository.
+
 ## Credits
 
 This portfolio was created by Fabian Alarcon. Special thanks to the following contributors:
