@@ -5,7 +5,14 @@ export const dialogueData = {
     "terraform": `Terraform se convirtió en una herramienta fundamental en mi viaje por el Tech Camp. Aprendí a utilizarla para la creación y gestión de infraestructura como código, lo que me permitió definir y desplegar recursos en la nube de manera predecible y escalable. Con Terraform, pude automatizar la creación de reglas en AWS mediante Event Bridge, optimizando costos y aumentando la eficiencia en la programación de horarios para encender y apagar clusters en horas no laborales.`,
     "aws": `Durante mi participación en el Tech Camp, profundicé mis conocimientos en AWS (Amazon Web Services). Exploré diversas servicios como AWS Lambda, AWS CloudFront, AWS S3, AWS SQS y AWS ECS, aprendiendo a implementar, configurar y optimizar cada uno de ellos para diferentes proyectos. También adquirí habilidades en la configuración de networking para la comunicación entre servicios ECS de AWS, lo que mejoró la interoperabilidad y el rendimiento de mis aplicaciones en la nube`,
     "github": `GitHub se convirtió en mi compañero constante durante el Tech Camp. Utilicé esta plataforma para colaborar en proyectos, gestionar versiones de código y participar en comunidades de desarrollo. Aprendí a utilizar características avanzadas como ramas, solicitudes de extracción y problemas para trabajar de manera más eficiente en equipo y mejorar la calidad del software.`,
-    "davivienda":`Durante mi experiencia en el Tech Camp, tuve la oportunidad de aplicar mis habilidades en el mundo real colaborando con Davivienda. Participé en proyectos donde implementé soluciones tecnológicas utilizando Java, Python, TypeScript, JavaScript, Node.js y Spring Boot. Además, trabajé en la actualización y generación de documentación utilizando herramientas como Confluence, asegurando la trazabilidad y comprensión de los sistemas desarrollados.`,
+    "davivienda":`Durante mi experiencia en el Tech Camp, tuve la oportunidad de aplicar mis habilidades en el mundo real colaborando con Davivienda. Participé en proyectos donde implementé soluciones tecnológicas utilizando: 
+    <ul> 
+    <li>Java</li>
+    <li>Python</li>
+    <li>TypeScript</li> 
+    <li>JavaScript </li>
+    <li>Node.js</li>
+    <li>Spring Boot. Además, trabajé en la actualización y generación de documentación utilizando herramientas como Confluence, asegurando la trazabilidad y comprensión de los sistemas desarrollados.`,
 
     "resume": `Aquí esta un pequeño resumen de algunos de los logros los cuales me siento orgulloso de consiguir en este maravilloso programa: <br>
     <ul>  
