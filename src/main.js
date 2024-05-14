@@ -2,26 +2,26 @@ import { dialogueData, scaleFactor } from "./constants";
 import { k } from "./kaboomCtx";
 import { displayDialogue, setCamScale } from "./utils";
 
-k.loadSprite("spritesheet", "./spritesheet.png", {
-    sliceX: 39,
-    sliceY: 31,
+k.loadSprite("spritesheet", "./fabian.png", {
+    sliceX: 24,
+    sliceY: 7,
     anims: {
-        "idle-down": 936,
-        "walk-down": { from: 936, to: 939, loop: true, speed: 8},
-        "idle-slide": 975,
-        "walk-slide": { from: 975, to: 978, loop: true, speed: 8},
-        "idle-up": 975,
-        "walk-up": { from: 1014, to: 1017, loop: true, speed: 8}
+        "idle-down": 3,
+        "walk-down": { from: 66, to: 71, loop: true, speed: 8},
+        "idle-slide": 24,
+        "walk-slide": { from: 48, to: 53, loop: true, speed: 8},
+        "idle-up": 30,
+        "walk-up": { from: 54, to: 59, loop: true, speed: 8}
     }
 });
 
-k.loadSprite("map", "./map2.png");
+k.loadSprite("map", "./map.png");
 
-k.setBackground(k.Color.fromHex("#311047"));
+k.setBackground(k.Color.fromHex("#464660"));
 
 k.scene("main", async () => {
     // Initialize game elements
-    const mapData = await (await fetch("./map2.json")).json();
+    const mapData = await (await fetch("./map.json")).json();
     const layers = mapData.layers;
 
     const map = k.add([k.sprite("map"), k.pos(0), k.scale(scaleFactor)]);
@@ -29,14 +29,14 @@ k.scene("main", async () => {
     const player = k.make([
         k.sprite("spritesheet",{anim: "idle-down"}), 
         k.area({
-            shape: new k.Rect(k.vec2(0,3), 10,10)
+            shape: new k.Rect(k.vec2(0,11), 10,8)
         }),
         k.body(),
         k.anchor("center"),
         k.pos(),
         k.scale(scaleFactor),
         {
-            speed: 250,
+            speed: 220,
             direction: "down",
             isInDialogue: false,
         },

@@ -15,7 +15,7 @@ export function displayDialogue(text, onDisplayEnd) {
         }
 
         clearInterval(intervalRef);
-    }, 10);
+    }, 0.5);
 
     const closeBtn = document.getElementById("close");
 
