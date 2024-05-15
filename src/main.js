@@ -16,6 +16,7 @@ k.loadSprite("spritesheet", "./fabian.png", {
 });
 
 k.loadSprite("map", "./map.png");
+k.loadSprite("boundaries", "./boundaries.png"); // Cargar la imagen de los límites
 
 k.setBackground(k.Color.fromHex("#464660"));
 
@@ -29,7 +30,7 @@ k.scene("main", async () => {
     const player = k.make([
         k.sprite("spritesheet",{anim: "idle-down"}), 
         k.area({
-            shape: new k.Rect(k.vec2(0,11), 10,8)
+            shape: new k.Rect(k.vec2(0,11), 8,8)
         }),
         k.body(),
         k.anchor("center"),
@@ -77,6 +78,13 @@ k.scene("main", async () => {
             }
         }
     }
+
+    // Agregar la imagen de los límites sobre el mapa
+    const boundary = k.add([
+        k.sprite("boundaries"),
+        k.pos(0), // Ajusta la posición según sea necesario
+        k.scale(scaleFactor),
+    ]);
 
     // Set camera scale and update functions
     setCamScale(k);
