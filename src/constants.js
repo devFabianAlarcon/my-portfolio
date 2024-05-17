@@ -28,7 +28,7 @@ export const dialogueData = {
             <li>Valorar la colaboración y el compañerismo</li>
             <li>Ser creativo y adaptable a los cambios</li>
             <li>Llenarse de pasión y sueños por convertirse en un líder tecnológico</li>
-            <li>Adquirir conocimientos técnicos y de equipo en DevOps, DevSecOps, IaC en Terraform, AWS, Script en Bash, Pipelines en Github Actions, CICD, entre otros.</li>
+            <li>Adquirir conocimientos técnicos y de equipo en DevOps, DevSecOps, IaC con Terraform, AWS, Script en Bash, Pipelines en Github Actions, CI/CD, entre otros.</li>
             <li>Aprender una amplia gama de lenguajes de programación como NodeJS, Java, Python, TypeScript, Angular.</li>
             <li>Practicar principios fundamentales dentro del desarrollo de software ágil como Yagni, Kiss, Clean Code, BoyScout, algunos Patrones de Diseño de software y Scrum.</li>
         </ul>
