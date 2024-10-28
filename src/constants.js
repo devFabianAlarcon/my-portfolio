@@ -3,7 +3,7 @@ export const scaleFactor = 4;
 export const dialogueData = {
   "welcome": `
   <h2>¡Bienvenido!</h2>
-  Acompáñanos a conocer a <strong>Fabián</strong> un TechCamper que encontramos dentro de la caja. <br><br> 
+  Acompáñanos a conocer a <strong>Fabián</strong> un <strong style="color: red;">TechCamper</strong> que encontramos dentro de la caja. <br><br> 
   <div style="text-align: center;"><img src="./davivienda.png" alt="Mi imagen" style="max-width: 8rem;"></div>`,
   "davivienda":`     
     <h2>¿Quién es Fabián?</h2>
